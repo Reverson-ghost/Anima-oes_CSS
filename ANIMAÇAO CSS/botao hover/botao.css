@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.button {
+    background: white;
+    font-weight: 600;
+    font-family: 'century gothic' sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    /*tira a linha embaixo do texto*/
+    text-transform: uppercase;
+    /*transforma todo texto em letras maiusculas*/
+    letter-spacing: 2px;
+    /* espaço entre as letras*/
+    padding: 35px 35px;
+    color: rgb(0, 0, 0);
+    transition: .4s;
+    clip-path: polygon(100% 0%, 90% 48%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    cursor: none;
+  
+
+}
+
+.button:hover {
+    /* passar por do botao e ele mudar de cor*/
+    background: rgb(55, 255, 0);
+    color: rgb(8, 8, 8);
+    letter-spacing: 5px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+    /*Site onde pegar as formas geometricas
+    CLIPPy*/
+    transition: .5s;
+
+}

@@ -1,0 +1,103 @@
+* {
+    /*reset de toda a pagina*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+/*Centralizar os elementos no meio*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+
+.container {
+    background-color: rgb(1, 1, 1);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgb(145, 253, 123);/* Sombras do elemento container*/
+    /* 1 eixo horizontal 2 vertical  3 desfoque / cor e opacidade*/
+}
+
+.input-box {
+    position: relative;
+    width: 350px;
+    background-color: rgb(153, 255, 102);
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px 10px; /*Horizontal e vertical*/
+    border: none;
+    outline: none;/* nao marcar o input*/
+    background:transparent;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: .05rem;
+    color: rgb(6, 6, 6);
+    z-index: 1;
+    position: relative;
+}
+
+.input-box span {
+    position: absolute;
+    left: 33%;
+    padding: 10px 0;
+    color: rgb(4, 4, 4);
+    pointer-events: none;/* remove a seleção da fonte no input*/
+    font-size: 15px;
+    transition: .5s;
+    animation: text reverse infinite 15s ;
+}
+ @keyframes text{/* animação para o span*/
+    0%{
+        color: rgb(4, 4, 4);
+    }
+    25%{
+        color: rgb(98, 249, 67);
+        
+    }
+    50%{
+        color: rgb(255, 255, 255);
+    }
+    75%{
+        color: rgb(4, 4, 4);
+    }
+    100%{
+        color: rgb(253, 253, 253);
+    }
+    25%{
+        color: rgb(9, 9, 9);
+    }
+    50%{
+        color: rgb(0, 255, 34);
+    }
+    0%{
+        color: rgb(255, 255, 255);
+    }
+
+}
+.input-box input:valid~span,
+.input-box input:focus~span {
+    font-size: .90rem;
+    transform: translateY(-32px);
+}
+
+.input-box i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(222, 233, 209);
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+}
+
+.input-box input:valid~i,/* evento de clique do mouse*/
+.input-box input:focus~i {
+    height: 100%;
+    box-shadow: inset 0 0 10px rgb(206, 180, 231);
+}
