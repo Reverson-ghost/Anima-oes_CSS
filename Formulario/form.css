@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.titulo {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #fff;
+}
+.titulo span{
+    padding: 2px;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    animation: titulo 20s infinite;
+    box-shadow: 5px 8px 10px 0px rgb(253, 255, 253);
+}
+@keyframes titulo {
+    0%{
+        color: #fff;
+    }
+10%{
+        color: #f00;
+    }
+    25%{
+        color: #0f0;
+    }
+    75%{
+        color: #00f;
+
+    }
+    100%{
+        color: rgb(105, 170, 88);
+    }
+}
+
+
+
+.conteudo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    top: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(33, 255, 4);
+    animation: back 60s infinite ease-in-out;
+}
+@keyframes back {
+    
+    0%{
+        background: rgb(56, 54, 54);
+    }
+    10%{
+        background: rgb(207, 98, 98);
+    }
+    25%{
+        background: rgb(77, 182, 6);
+    }
+    75%{
+        background: rgb(6, 6, 160);
+    }
+    100%{
+        background: rgb(87, 81, 81);
+    }
+}
+.form-1 {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    max-width: 500px;
+    margin: 5px;
+    padding: 20px;
+    background: rgb(31, 27, 32);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px red;
+    animation: form-1 20s infinite ease;
+}
+@keyframes form-1{
+    0%{
+        background: rgb(255, 255, 255);
+        color: #000;
+    }
+    10%{
+        background: rgb(255, 17, 0);
+        color:black;
+    }
+    25%{
+        background: rgb(25, 0, 255);
+        color:white;
+    }
+    75%{
+        background: rgb(81, 255, 0);
+        color: #000;
+    }
+    100%{
+        background: rgb(31, 27, 32);
+        color: #fff;
+    }
+} 
+
+input {
+    text-align: center;
+    margin: 15px;
+    width: 100%;
+    border: 1px solid rgb(82, 56, 56);
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.form-2 {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    max-width: 500px;
+    margin: 5px;
+    padding: 20px;
+    background: rgb(31, 27, 32);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px red;
+    animation: form-2 40s infinite ease;
+}
+@keyframes form-2{
+    0%{
+        background: rgb(0, 255, 21);
+        color: #000;
+    }
+    10%{
+        background: rgb(0, 238, 255);
+        color:black;
+    }
+    25%{
+        background: rgb(255, 0, 242);
+        color:white;
+    }
+    75%{
+        background: rgb(255, 238, 0);
+        color: #000;
+    }
+    100%{
+        background: rgb(107, 4, 90);
+        color: #fff;
+    }
+} 
+
+.btn-enviar {
+    margin: 15px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    box-shadow:0px 0px 10px 0px #00f;
+    animation: btn 20s infinite ease-in;
+}
+.btn-enviar:hover{
+    background: #fff;
+    color: #000;
+    box-shadow:0px 0px 10px 0px #f00;
+}
+@keyframes btn {
+    
+    0%{
+        background: rgb(56, 54, 54);
+    }
+    10%{
+        background: rgb(207, 98, 98);
+    }
+    25%{
+        background: rgb(77, 182, 6);
+    }
+    75%{
+        background: rgb(6, 6, 160);
+    }
+    100%{
+        background: rgb(87, 81, 81);
+    }
+}
+footer{
+    position: relative;
+    top: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #fff;
+}
